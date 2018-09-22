@@ -126,63 +126,189 @@
 
     <div class="tickets-wrapper container">
       <h1 class="container-title">{$ ticketsBlock.title $}</h1>
-      <content-loader
-        class="tickets-placeholder"
-        card-padding="24px"
-        card-height="216px"
-        border-radius="var(--border-radius)"
-        title-top-position="32px"
-        title-height="42px"
-        title-width="70%"
-        load-from="-70%"
-        load-to="130%"
-        animation-time="1s"
-        items-count="{$ contentLoaders.tickets.itemsCount $}"
-        hidden$="[[contentLoaderVisibility]]">
-      </content-loader>
-
-      <div class="tickets" layout horizontal wrap center-justified>
-        <template is="dom-repeat" items="[[tickets]]" as="ticket">
+  
+      <div class="tickets tickets-block" layout horizontal wrap center-justified>
+          <a
+          class="ticket-item card"
+          href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
+          target="_blank"
+          rel="noopener noreferrer"
+          sold-out$="true"
+          in-demand$="false"
+          on-tap="_onTicketTap"
+          ga-on="click"
+          ga-event-category="ticket"
+          ga-event-action="buy_click"
+          ga-event-label$="primeiro_lote"
+          layout vertical
+        >
+          <div class="header">
+            <h4>Early Bid</h4>
+          </div>
+          <div class="content" layout vertical flex-auto>
+            <div class="ticket-price-wrapper">
+              <div class="price">R$ 50</div>
+            </div>
+            <div class="type-description" layout vertical flex-auto center-justified>
+              <div class="ticket-dates" hidden$="[[!ticket.starts]]">21/09</div>
+              <div class="ticket-info">Lote promocional.</div>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="sold-out" >
+              Sold out
+            </div>
+            <!-- <paper-button primary >
+              [[_getButtonText(ticket.available)]] 
+              Comprar
+            </paper-button> -->
+          </div>
+        </a>
           <a
             class="ticket-item card"
-            href$="[[ticket.url]]"
+            href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
             target="_blank"
             rel="noopener noreferrer"
-            sold-out$="[[ticket.soldOut]]"
-            in-demand$="[[ticket.inDemand]]"
+            sold-out$="false"
+            in-demand$="false"
             on-tap="_onTicketTap"
             ga-on="click"
             ga-event-category="ticket"
             ga-event-action="buy_click"
-            ga-event-label$="[[ticket.name]]"
+            ga-event-label$="primeiro_lote"
             layout vertical
           >
             <div class="header">
-              <h4>[[ticket.name]]</h4>
+              <h4>Primeiro lote estudante</h4>
             </div>
             <div class="content" layout vertical flex-auto>
               <div class="ticket-price-wrapper">
-                <div class="price">[[ticket.currency]][[ticket.price]]</div>
-                <div class="discount">[[_getDiscount(ticket)]]</div>
+                <div class="price">R$ 70</div>
               </div>
               <div class="type-description" layout vertical flex-auto center-justified>
-                <div class="ticket-dates" hidden$="[[!ticket.starts]]">[[ticket.starts]] - [[ticket.ends]]</div>
-                <div class="ticket-info">[[ticket.info]]</div>
+                <div class="ticket-dates" hidden$="[[!ticket.starts]]">21/09 - 21/10</div>
+                <div class="ticket-info">Ingresso de estudante ou solidário.</div>
               </div>
             </div>
             <div class="actions">
-              <div class="sold-out" block$="[[ticket.soldOut]]">
+              <!-- <div class="sold-out" block$="[[ticket.soldOut]]">
                 {$ ticketsBlock.soldOut $}
-              </div>
-              <paper-button primary hidden$="[[ticket.soldOut]]" disabled$="[[!ticket.available]]">
-                [[_getButtonText(ticket.available)]]
-              </paper-button>
+              </div> -->
+              <!-- <paper-button primary >
+                [[_getButtonText(ticket.available)]] 
+                Comprar
+              </paper-button> -->
             </div>
           </a>
-        </template>
+          <a
+            class="ticket-item card"
+            href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
+            target="_blank"
+            rel="noopener noreferrer"
+            sold-out$="false"
+            in-demand$="false"
+            on-tap="_onTicketTap"
+            ga-on="click"
+            ga-event-category="ticket"
+            ga-event-action="buy_click"
+            ga-event-label$="primeiro_lote"
+            layout vertical
+          >
+            <div class="header">
+              <h4>Primeiro lote inteira</h4>
+            </div>
+            <div class="content" layout vertical flex-auto>
+              <div class="ticket-price-wrapper">
+                <div class="price">R$ 140</div>
+              </div>
+              <div class="type-description" layout vertical flex-auto center-justified>
+                <div class="ticket-dates" hidden$="[[!ticket.starts]]">21/09 - 21/10</div>
+                <div class="ticket-info"></div>
+              </div>
+            </div>
+            <div class="actions">
+              <!-- <div class="sold-out" block$="[[ticket.soldOut]]">
+                {$ ticketsBlock.soldOut $}
+              </div> -->
+              <!-- <paper-button primary >
+                [[_getButtonText(ticket.available)]] 
+                Comprar
+              </paper-button> -->
+            </div>
+          </a>
+          <a
+            class="ticket-item card"
+            href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
+            target="_blank"
+            rel="noopener noreferrer"
+            sold-out$="false"
+            in-demand$="false"
+            on-tap="_onTicketTap"
+            ga-on="click"
+            ga-event-category="ticket"
+            ga-event-action="buy_click"
+            ga-event-label$="primeiro_lote"
+            layout vertical
+          >
+            <div class="header">
+              <h4>Segundo lote estudante</h4>
+            </div>
+            <div class="content" layout vertical flex-auto>
+              <div class="ticket-price-wrapper">
+                <div class="price">R$ 95</div>
+              </div>
+              <div class="type-description" layout vertical flex-auto center-justified>
+                <div class="ticket-dates" hidden$="[[!ticket.starts]]">22/10 - 24/11</div>
+                <div class="ticket-info">Ingresso de estudante ou solidário.</div>
+              </div>
+            </div>
+            <div class="actions">
+              <!-- <div class="sold-out" block$="[[ticket.soldOut]]">
+                {$ ticketsBlock.soldOut $}
+              </div> -->
+              <!-- <paper-button primary >
+                [[_getButtonText(ticket.available)]] 
+                Comprar
+              </paper-button> -->
+            </div>
+          </a>
+          <a
+            class="ticket-item card"
+            href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
+            target="_blank"
+            rel="noopener noreferrer"
+            sold-out$="false"
+            in-demand$="false"
+            on-tap="_onTicketTap"
+            ga-on="click"
+            ga-event-category="ticket"
+            ga-event-action="buy_click"
+            ga-event-label$="primeiro_lote"
+            layout vertical
+          >
+            <div class="header">
+              <h4>Segundo lote inteira</h4>
+            </div>
+            <div class="content" layout vertical flex-auto>
+              <div class="ticket-price-wrapper">
+                <div class="price">R$ 190</div>
+              </div>
+              <div class="type-description" layout vertical flex-auto center-justified>
+                <div class="ticket-dates" hidden$="[[!ticket.starts]]">22/10 - 24/11</div>
+                <div class="ticket-info"></div>
+              </div>
+            </div>
+            <div class="actions">
+              <!-- <div class="sold-out" block$="[[ticket.soldOut]]">
+                {$ ticketsBlock.soldOut $}
+              </div> -->
+              <!-- <paper-button primary >
+                [[_getButtonText(ticket.available)]] 
+                Comprar
+              </paper-button> -->
+            </div>
+          </a>
       </div>
-
-      <div class="additional-info">*{$ ticketsBlock.ticketsDetails $}</div>
 
     </div>
 
@@ -238,10 +364,10 @@
       }
 
       _onTicketTap(e) {
-        if (e.model.ticket.soldOut || !e.model.ticket.available) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
+        // if (e.model.ticket.soldOut || !e.model.ticket.available) {
+          // e.preventDefault();
+          // e.stopPropagation();
+        // }
       }
 
       _getButtonText(available) {

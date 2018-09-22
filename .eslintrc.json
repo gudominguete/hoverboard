@@ -47,7 +47,7 @@
     "galleryActions": true,
     "teamActions": true,
     "userActions": true,
-    "subscribeActions": true,
+    "subscribeActions": false,
     "notificationsActions": true,
     "helperActions": true,
     "DIALOGS": true,

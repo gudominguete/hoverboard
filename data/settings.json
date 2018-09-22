@@ -1,47 +1,31 @@
 {
   "organizer": {
-    "name": "GDG Lviv",
+    "name": "GDG Sul de Minas",
     "twitter": "gdglviv",
     "blog": "https://medium.com/gdg-lviv",
     "url": "http://lviv.gdg.org.ua/"
   },
-  "startDate": "2017-10-013T09:00:00+03:00",
-  "endDate": "2017-10-14T19:00:00+03:00",
+  "startDate": "2017-11-024T08:00:00+03:00",
+  "endDate": "2017-10-24T19:00:00+03:00",
   "webapp": {
     "shortName": "DevFest",
     "themeColor": "#673AB7",
     "backgroundColor": "#673AB7"
   },
   "dateFormat": {
-    "locale": "en-US"
+    "locale": "pt-Br"
   },
-  "hashtag": "DevFest17",
+  "hashtag": "DevFestSulDeMinas",
   "disabledSchedule": false,
   "navigation": [
     {
       "route": "home",
       "permalink": "/",
       "label": "Home"
-    },
-    {
+    }, {
       "route": "speakers",
-      "permalink": "/speakers/",
-      "label": "Speakers"
-    },
-    {
-      "route": "schedule",
-      "permalink": "/schedule/",
-      "label": "Schedule"
-    },
-    {
-      "route": "team",
-      "permalink": "/team/",
-      "label": "Team"
-    },
-    {
-      "route": "blog",
-      "permalink": "/blog/",
-      "label": "Blog"
+      "permalink": "/speakers",
+      "label": "Palestrantes"
     }
   ],
   "heroSettings": {
@@ -62,9 +46,9 @@
       "fontColor": "#424242"
     },
     "speakers": {
-      "title": "Speakers",
+      "title": "Palestrantes",
       "metaDescription": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
-      "description": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
+      "description": "Abaixo está nosso time de peso para trazer muito conteúdo para vocês!",
       "background": {
         "color": "#FFF"
       },
@@ -114,8 +98,8 @@
   "location": {
     "label": "Location",
     "name": "Planeta kino",
-    "city": "Lviv",
-    "short": "Lviv, Ukraine",
+    "city": "Varginha",
+    "short": "Varginha, Minas Gerais",
     "address": "36 Shchyretska St, Lviv, Ukraine",
     "pointer": {
       "latitude": 49.809841,

@@ -167,13 +167,13 @@
       font-color="{$ heroSettings.speakers.fontColor $}"
       active="[[active]]"
     >
-      <div class="hero-title highlight-font">{$ heroSettings.speakers.title $}</div>
+      <div class="hero-title highlight-font">Palestrantes</div>
       <p class="hero-description">{$ heroSettings.speakers.description $}</p>
     </hero-block>
 
-    <paper-progress indeterminate hidden$="[[contentLoaderVisibility]]"></paper-progress>
+    <!-- <paper-progress indeterminate hidden$="[[contentLoaderVisibility]]"></paper-progress> -->
 
-    <content-loader
+    <!-- <content-loader
       class="container"
       card-padding="32px"
       card-height="400px"
@@ -183,20 +183,20 @@
       box-shadow="var(--box-shadow)"
       items-count="{$ contentLoaders.speakers.itemsCount $}"
       hidden$="[[contentLoaderVisibility]]"
-    ></content-loader>
+    ></content-loader> -->
 
     <div class="container">
-      <template is="dom-repeat" items="[[speakers]]" as="speaker">
+      <!-- <template > -->
         <a class="speaker card"
            href$="/speakers/[[speaker.id]]/"
            ga-on="click"
            ga-event-category="speaker"
            ga-event-action="open details"
-           ga-event-label$="[[speaker.name]]">
+           ga-event-label$="Rafael Toledo">
           <div relative>
             <plastic-image
               class="photo"
-              srcset="[[speaker.photoUrl]]"
+              srcset="../images/palestrantes/Rafael-Toledo.jpg"
               sizing="cover"
               lazy-load preload fade
             ></plastic-image>
@@ -224,11 +224,11 @@
           ></plastic-image>
 
           <div class="description">
-            <h2 class="name">[[speaker.name]]</h2>
-            <div class="origin">[[speaker.country]]</div>
+            <h2 class="name">Rafael Toledo</h2>
+            <!-- <div class="origin">[[speaker.country]]</div> -->
 
             <text-truncate lines="5">
-              <div class="bio">[[speaker.shortBio]]</div>
+              <div class="bio">Formado em Santa Rita do Sapucaí e desenvolvedor Android desde 2011, atualmente na ThoughtWorks.</div>
             </text-truncate>
           </div>
 
@@ -244,12 +244,12 @@
           </div>
 
         </a>
-      </template>
+      <!-- </template> -->
     </div>
 
-    <previous-speakers-block></previous-speakers-block>
+    <!-- <previous-speakers-block></previous-speakers-block> -->
 
-    <footer-block></footer-block>
+    <!-- <footer-block></footer-block> -->
 
   </template>
 

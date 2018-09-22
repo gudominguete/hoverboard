@@ -1,9 +1,9 @@
 {
-  "title": "GDG DevFest Season 2018",
+  "title": "GDG DevFest Sul de Minas 2018",
   "description": "Be a hero. Be a GDG!",
   "image": "images/social-share.jpg",
   "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
-  "dates": "October 12-13, 2018",
+  "dates": "24 de Novembro de 2018",
   "partnershipProposition": "https://bit.ly/dfua17-partners",
   "share": "Share",
   "followOur": "Follow our",
@@ -11,7 +11,7 @@
   "emailUs": "Email us",
   "partnershipResources": "Partnership Resources",
   "eventResources": "Event Resources",
-  "buyTicket": "Buy ticket",
+  "buyTicket": "Comprar ingressos",
   "signIn": "Sign in",
   "signOut": "Sign out",
   "viewHighlights": "View Highlights",
@@ -144,12 +144,68 @@
     }
   },
   "ticketsBlock": {
-    "title": "Tickets",
+    "title": "Ingressos",
     "ticketsDetails": "Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price.",
     "soldOut": "You missed it!",
     "notAvailableYet": "Not available yet",
     "save": "Save ${discount}% today"
   },
+  "tickets" : [ {
+    "available" : true,
+    "currency" : "$",
+    "ends" : "Oct 13",
+    "info" : "Requires valid student/lecturer ID",
+    "name" : "EDU",
+    "price" : 80,
+    "soldOut" : false,
+    "starts" : "Feb 7",
+    "url" : "https://2event.com/events/1027108"
+  }, {
+    "available" : false,
+    "currency" : "$",
+    "ends" : "Mar 31",
+    "inDemand" : false,
+    "info" : "Or first 50 tickets",
+    "name" : "Pre Early Bird",
+    "price" : 100,
+    "regular" : true,
+    "soldOut" : true,
+    "starts" : "Feb 7",
+    "url" : "https://2event.com/events/1027108"
+  }, {
+    "available" : true,
+    "currency" : "$",
+    "ends" : "Jun 30",
+    "inDemand" : true,
+    "info" : "Or first 200 tickets",
+    "name" : "Early Bird",
+    "price" : 120,
+    "regular" : true,
+    "soldOut" : false,
+    "starts" : "Feb 7",
+    "url" : "https://2event.com/events/1027108"
+  }, {
+    "available" : false,
+    "currency" : "$",
+    "ends" : "Sep 30",
+    "inDemand" : false,
+    "info" : "Or first 350 tickets",
+    "name" : "Regular",
+    "price" : 160,
+    "primary" : true,
+    "regular" : true,
+    "soldOut" : false,
+    "starts" : "Jul 1",
+    "url" : "https://2event.com/events/1027108"
+  }, {
+    "available" : true,
+    "currency" : "$",
+    "info" : "Money worth nothing when you love it",
+    "name" : "I Love DFUA",
+    "price" : 280,
+    "soldOut" : false,
+    "url" : "https://2event.com/events/1027108"
+  } ],
   "partnersBlock": {
     "title": "Partners",
     "button": "Become a partner",

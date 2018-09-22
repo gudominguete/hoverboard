@@ -152,7 +152,7 @@
         </paper-tab>
         {% endfor %}
 
-        <paper-tab class="signin-tab" on-tap="signIn" link hidden$="[[user.signedIn]]">{$ signIn $}</paper-tab>
+        <!-- <paper-tab class="signin-tab" on-tap="signIn" link hidden$="[[user.signedIn]]">{$ signIn $}</paper-tab> -->
 
         <a href$="[[_getTicketUrl(tickets)]]" target="_blank" rel="noopener noreferrer" ga-on="click"
            ga-event-category="ticket button" ga-event-action="buy_click">
@@ -160,7 +160,7 @@
         </a>
       </paper-tabs>
 
-      <paper-menu-button
+      <!-- <paper-menu-button
         id="notificationsMenu"
         class="notifications-menu"
         vertical-align="top"
@@ -194,7 +194,7 @@
             </div>
           </div>
         </div>
-      </paper-menu-button>
+      </paper-menu-button> -->
 
       <paper-menu-button
         class="auth-menu"
@@ -334,9 +334,7 @@
       }
 
       _getTicketUrl(tickets) {
-        if (!tickets.list.length) return '';
-        const availableTicket = tickets.list.filter((ticket) => ticket.available)[0];
-        return availableTicket ? availableTicket.url : tickets.list[0].url;
+        return 'https://www.sympla.com.br/devfest-sul-de-minas18__341726';
       }
 
       _setToolbarSettings(settings) {
