@@ -128,7 +128,7 @@
       <h1 class="container-title">{$ ticketsBlock.title $}</h1>
   
       <div class="tickets tickets-block" layout horizontal wrap center-justified>
-          <a
+          <!-- <a
           class="ticket-item card"
           href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
           target="_blank"
@@ -161,9 +161,9 @@
             <!-- <paper-button primary >
               [[_getButtonText(ticket.available)]] 
               Comprar
-            </paper-button> -->
+            </paper-button>
           </div>
-        </a>
+        </a> -->
           <a
             class="ticket-item card"
             href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
@@ -251,6 +251,114 @@
             layout vertical
           >
             <div class="header">
+              <h4>Caravana 5 pessoas</h4>
+            </div>
+            <div class="content" layout vertical flex-auto>
+              <div class="ticket-price-wrapper">
+                <div class="price">R$ 65</div>
+              </div>
+              <div class="type-description" layout vertical flex-auto center-justified>
+                <div class="ticket-dates" hidden$="[[!ticket.starts]]">21/09 - 21/10</div>
+                <div class="ticket-info"></div>
+              </div>
+            </div>
+            <div class="actions">
+              <!-- <div class="sold-out" block$="[[ticket.soldOut]]">
+                {$ ticketsBlock.soldOut $}
+              </div> -->
+              <!-- <paper-button primary >
+                [[_getButtonText(ticket.available)]] 
+                Comprar
+              </paper-button> -->
+            </div>
+          </a>
+          <a
+            class="ticket-item card"
+            href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
+            target="_blank"
+            rel="noopener noreferrer"
+            sold-out$="false"
+            in-demand$="false"
+            on-tap="_onTicketTap"
+            ga-on="click"
+            ga-event-category="ticket"
+            ga-event-action="buy_click"
+            ga-event-label$="primeiro_lote"
+            layout vertical
+          >
+            <div class="header">
+              <h4>Caravana 10 pessoas</h4>
+            </div>
+            <div class="content" layout vertical flex-auto>
+              <div class="ticket-price-wrapper">
+                <div class="price">R$ 60</div>
+              </div>
+              <div class="type-description" layout vertical flex-auto center-justified>
+                <div class="ticket-dates" hidden$="[[!ticket.starts]]">21/09 - 21/10</div>
+                <div class="ticket-info"></div>
+              </div>
+            </div>
+            <div class="actions">
+              <!-- <div class="sold-out" block$="[[ticket.soldOut]]">
+                {$ ticketsBlock.soldOut $}
+              </div> -->
+              <!-- <paper-button primary >
+                [[_getButtonText(ticket.available)]] 
+                Comprar
+              </paper-button> -->
+            </div>
+          </a>
+          <a
+            class="ticket-item card"
+            href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
+            target="_blank"
+            rel="noopener noreferrer"
+            sold-out$="false"
+            in-demand$="false"
+            on-tap="_onTicketTap"
+            ga-on="click"
+            ga-event-category="ticket"
+            ga-event-action="buy_click"
+            ga-event-label$="primeiro_lote"
+            layout vertical
+          >
+            <div class="header">
+              <h4>Caravana 15 pessoas</h4>
+            </div>
+            <div class="content" layout vertical flex-auto>
+              <div class="ticket-price-wrapper">
+                <div class="price">R$ 55</div>
+              </div>
+              <div class="type-description" layout vertical flex-auto center-justified>
+                <div class="ticket-dates" hidden$="[[!ticket.starts]]">21/09 - 21/10</div>
+                <div class="ticket-info"></div>
+              </div>
+            </div>
+            <div class="actions">
+              <!-- <div class="sold-out" block$="[[ticket.soldOut]]">
+                {$ ticketsBlock.soldOut $}
+              </div> -->
+              <!-- <paper-button primary >
+                [[_getButtonText(ticket.available)]] 
+                Comprar
+              </paper-button> -->
+            </div>
+          </a>
+          <!-- <a
+            class="ticket-item card"
+            href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
+            target="_blank"
+            rel="noopener noreferrer"
+            sold-out$="false"
+            in-demand$="false"
+            on-tap="_onTicketTap"
+            ga-on="click"
+            ga-event-category="ticket"
+            ga-event-action="buy_click"
+            ga-event-label$="primeiro_lote"
+            layout vertical
+          >
+            <div class="header">
               <h4>Segundo lote estudante</h4>
             </div>
             <div class="content" layout vertical flex-auto>
@@ -269,10 +377,10 @@
               <!-- <paper-button primary >
                 [[_getButtonText(ticket.available)]] 
                 Comprar
-              </paper-button> -->
+              </paper-button>
             </div>
-          </a>
-          <a
+          </a> -->
+          <!-- <a
             class="ticket-item card"
             href$="https://www.sympla.com.br/devfest-sul-de-minas18__341726"
             target="_blank"
@@ -305,9 +413,9 @@
               <!-- <paper-button primary >
                 [[_getButtonText(ticket.available)]] 
                 Comprar
-              </paper-button> -->
+              </paper-button>
             </div>
-          </a>
+          </a> -->
       </div>
 
     </div>

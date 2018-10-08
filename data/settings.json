@@ -26,6 +26,10 @@
       "route": "speakers",
       "permalink": "/speakers",
       "label": "Palestrantes"
+    }, {
+      "route": "team",
+      "permalink": "/team",
+      "label": "Organizadores"
     }
   ],
   "heroSettings": {

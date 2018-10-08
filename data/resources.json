@@ -111,17 +111,17 @@
   "subscribeNote": "No spam, only the latest news and updates!",
   "codeOfConduct": "Code of Conduct",
   "aboutBlock": {
-    "title": "What you need to know, before you ask.",
+    "title": "O que você precisa saber sobre o evento.",
     "callToAction": {
       "featuredSessions": {
-        "description": "GDG DevFest Ukraine brings together the world class experts in Android, Web and Cloud technologies to Lviv for 2 days of sessions, workshops and showcases.",
-        "label": "Explore featured session",
-        "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
+        "description": "O DevFest é um evento gerido pela comunidade GDG de Lavras, Vale da Eletrônica e Varginha, oferecendo atividades relacionadas à tecnologia, inovação, empreendedorismo e muitos outros assuntos. Todo conteúdo é voltado para desenvolvedores e entusiastas por tecnologia.",
+        "label": "",
+        "link": ""
       },
       "howItWas": {
-        "description": "Described by many as 'Google I/O of Ukraine', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
-        "label": "See how it was in 2016",
-        "youtubeId": "TdpbgRgz6eE"
+        "description": "Nosso desejo é unir a comunidade, sejam de desenvolvedores, empreendedores, designers ou apenas entusiastas.",
+        "label": "",
+        "youtubeId": ""
       }
     },
     "statisticsBlock": {
